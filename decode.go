@@ -18,10 +18,10 @@ import (
 	"time"
 
 	"github.com/aixj1984/go-yaml/ast"
-	"github.com/aixj1984/go-yamlaml/internal/errors"
-	"github.com/aixj1984/go-yamlaml/internal/format"
-	"github.com/aixj1984/go-yamlaml/parser"
-	"github.com/aixj1984/go-yamlaml/token"
+	"github.com/aixj1984/go-yaml/internal/errors"
+	"github.com/aixj1984/go-yaml/internal/format"
+	"github.com/aixj1984/go-yaml/parser"
+	"github.com/aixj1984/go-yaml/token"
 )
 
 // Decoder reads and decodes YAML values from an input stream.
@@ -881,9 +881,7 @@ func (d *Decoder) decodeByUnmarshaler(ctx context.Context, dst reflect.Value, sr
 	return errors.New("does not implemented Unmarshaler")
 }
 
-var (
-	astNodeType = reflect.TypeOf((*ast.Node)(nil)).Elem()
-)
+var astNodeType = reflect.TypeOf((*ast.Node)(nil)).Elem()
 
 func (d *Decoder) decodeValue(ctx context.Context, dst reflect.Value, src ast.Node) error {
 	d.stepIn()

@@ -8,7 +8,7 @@ import (
 	"testing"
 
 	"github.com/aixj1984/go-yaml"
-	"github.com/aixj1984/go-yamlaml/parser"
+	"github.com/aixj1984/go-yaml/parser"
 )
 
 func builder() *yaml.PathBuilder { return &yaml.PathBuilder{} }

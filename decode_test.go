@@ -15,9 +15,9 @@ import (
 	"time"
 
 	"github.com/aixj1984/go-yaml"
-	"github.com/aixj1984/go-yamlaml/ast"
-	"github.com/aixj1984/go-yamlaml/internal/errors"
-	"github.com/aixj1984/go-yamlaml/parser"
+	"github.com/aixj1984/go-yaml/ast"
+	"github.com/aixj1984/go-yaml/internal/errors"
+	"github.com/aixj1984/go-yaml/parser"
 )
 
 type Child struct {
@@ -3342,7 +3342,6 @@ func TestNodeUnmarshalerContext(t *testing.T) {
 			}
 		})
 	}
-
 }
 
 type testNodeUnmarshaler struct {
@@ -3428,7 +3427,6 @@ func TestNodeUnmarshaler(t *testing.T) {
 			}
 		})
 	}
-
 }
 
 func TestMapKeyCustomUnmarshaler(t *testing.T) {
@@ -3525,7 +3523,6 @@ baz: *seq
 	); err != nil {
 		t.Fatal(err)
 	}
-
 }
 
 func TestIssue650(t *testing.T) {

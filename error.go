@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/aixj1984/go-yaml/ast"
-	"github.com/aixj1984/go-yamlaml/internal/errors"
+	"github.com/aixj1984/go-yaml/internal/errors"
 )
 
 var (

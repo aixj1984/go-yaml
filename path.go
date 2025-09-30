@@ -8,8 +8,8 @@ import (
 	"strings"
 
 	"github.com/aixj1984/go-yaml/ast"
-	"github.com/aixj1984/go-yamlaml/parser"
-	"github.com/aixj1984/go-yamlaml/printer"
+	"github.com/aixj1984/go-yaml/parser"
+	"github.com/aixj1984/go-yaml/printer"
 )
 
 // PathString create Path from string
