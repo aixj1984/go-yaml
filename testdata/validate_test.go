@@ -6,7 +6,7 @@ import (
 
 	"github.com/go-playground/validator/v10"
 
-	"github.com/goccy/go-yaml"
+	"github.com/aixj1984/github.com/aixj1984/go-yaml"
 )
 
 func TestStructValidator(t *testing.T) {

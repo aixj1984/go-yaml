@@ -73,7 +73,7 @@ const Header = (content: any) => {
         <Toolbar sx={{ backgroundColor: themeBlack }}>
           <Logo />
           <Typography sx={{ flexGrow: 1, textAlign: "left" }}>
-            goccy/go-yaml Playground
+            goccy/github.com/aixj1984/go-yaml Playground
           </Typography>
           <Stack
             sx={{
@@ -180,7 +180,7 @@ const ShareLink = (props: {
 const GitHubLink = () => {
   if (isXS()) {
     return (
-      <IconButton href="https://go-yaml">
+      <IconButton href="https://github.com/aixj1984/go-yaml">
         <GitHub sx={{ color: themeWhite }}></GitHub>
       </IconButton>
     );
@@ -197,7 +197,7 @@ const GitHubLink = () => {
         textTransform: "none",
       }}
       startIcon={<GitHub sx={{ color: themeBlack }}></GitHub>}
-      href="https://go-yaml"
+      href="https://github.com/aixj1984/go-yaml"
     >
       Visit Our GitHub
     </Button>
@@ -649,7 +649,7 @@ function App() {
     }
   };
   loader.init().then((monaco) => {
-    monaco.editor.defineTheme("go-yaml-theme", {
+    monaco.editor.defineTheme("github.com/aixj1984/go-yaml-theme", {
       base: "vs-dark",
       inherit: true,
       rules: [],
@@ -705,7 +705,7 @@ function App() {
           <MonacoEditor
             height={contentHeight()}
             language="yaml"
-            theme="go-yaml-theme"
+            theme="github.com/aixj1984/go-yaml-theme"
             options={{
               fontSize: 16,
               selectOnLineNumbers: true,

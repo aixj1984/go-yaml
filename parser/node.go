@@ -3,9 +3,9 @@ package parser
 import (
 	"fmt"
 
-	"go-yaml/ast"
-	"go-yaml/internal/errors"
-	"go-yaml/token"
+	"github.com/aixj1984/go-yaml/ast"
+	"github.com/aixj1984/go-yaml/internal/errors"
+	"github.com/aixj1984/go-yaml/token"
 )
 
 func newMappingNode(ctx *context, tk *Token, isFlow bool, values ...*ast.MappingValueNode) (*ast.MappingNode, error) {

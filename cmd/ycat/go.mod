@@ -1,10 +1,10 @@
-module go-yaml/cmd/ycat
+module github.com/aixj1984/go-yaml/cmd/ycat
 
 go 1.21.0
 
 require (
 	github.com/fatih/color v1.18.0
-	go-yaml v0.0.0-00010101000000-000000000000
+	github.com/aixj1984/go-yaml v0.0.0-00010101000000-000000000000
 	github.com/mattn/go-colorable v0.1.13
 )
 
@@ -13,4 +13,4 @@ require (
 	golang.org/x/sys v0.26.0 // indirect
 )
 
-replace go-yaml => ../../
+replace github.com/aixj1984/go-yaml => ../../

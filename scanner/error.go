@@ -1,6 +1,6 @@
 package scanner
 
-import "go-yaml/token"
+import "github.com/aixj1984/go-yaml/token"
 
 type InvalidTokenError struct {
 	Token *token.Token

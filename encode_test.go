@@ -14,9 +14,9 @@ import (
 	"time"
 	"unsafe"
 
-	"go-yaml"
-	"go-yaml/ast"
-	"go-yaml/parser"
+	"github.com/aixj1984/go-yaml"
+	"github.com/aixj1984/go-yaml/ast"
+	"github.com/aixj1984/go-yaml/parser"
 )
 
 var (
@@ -574,7 +574,7 @@ func TestEncoder(t *testing.T) {
 			},
 			nil,
 		},
-		// Highlighting differences of go-yaml omitempty vs std encoding/json
+		// Highlighting differences of github.com/aixj1984/go-yaml omitempty vs std encoding/json
 		// omitempty. Encoding/json will emit the following fields: https://go.dev/play/p/VvNpdM0GD4d
 		{
 			"{}\n",

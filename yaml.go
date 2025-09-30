@@ -7,8 +7,8 @@ import (
 	"reflect"
 	"sync"
 
-	"go-yaml/ast"
-	"go-yaml/internal/errors"
+	"github.com/aixj1984/go-yaml/ast"
+	"github.com/aixj1984/go-yaml/internal/errors"
 )
 
 // BytesMarshaler interface may be implemented by types to customize their
@@ -26,7 +26,7 @@ type BytesMarshalerContext interface {
 	MarshalYAML(context.Context) ([]byte, error)
 }
 
-// InterfaceMarshaler interface has MarshalYAML compatible with github.com/go-yaml/yaml package.
+// InterfaceMarshaler interface has MarshalYAML compatible with github.com/github.com/aixj1984/go-yaml/yaml package.
 type InterfaceMarshaler interface {
 	MarshalYAML() (interface{}, error)
 }
@@ -47,7 +47,7 @@ type BytesUnmarshalerContext interface {
 	UnmarshalYAML(context.Context, []byte) error
 }
 
-// InterfaceUnmarshaler interface has UnmarshalYAML compatible with github.com/go-yaml/yaml package.
+// InterfaceUnmarshaler interface has UnmarshalYAML compatible with github.com/github.com/aixj1984/go-yaml/yaml package.
 type InterfaceUnmarshaler interface {
 	UnmarshalYAML(func(interface{}) error) error
 }
@@ -110,7 +110,7 @@ func (s MapSlice) ToMap() map[interface{}]interface{} {
 //	             case the field will be included if that method returns true.
 //	             Note that this definition is slightly different from the Go's
 //	             encoding/json 'omitempty' definition. It combines some elements
-//	             of 'omitempty' and 'omitzero'. See https://go-yaml/issues/695.
+//	             of 'omitempty' and 'omitzero'. See https://github.com/aixj1984/go-yaml/issues/695.
 //
 //	omitzero      The omitzero tag behaves in the same way as the interpretation of the omitzero tag in the encoding/json library.
 //	              1) If the field type has an "IsZero() bool" method, that will be used to determine whether the value is zero.

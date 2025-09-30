@@ -5,10 +5,10 @@ import (
 	"os"
 	"strings"
 
-	"go-yaml/ast"
-	"go-yaml/internal/errors"
-	"go-yaml/lexer"
-	"go-yaml/token"
+	"github.com/aixj1984/go-yaml/ast"
+	"github.com/aixj1984/go-yaml/internal/errors"
+	"github.com/aixj1984/go-yaml/lexer"
+	"github.com/aixj1984/go-yaml/token"
 )
 
 type Mode uint
@@ -91,7 +91,7 @@ func newParser(tokens token.Tokens, mode Mode, opts []Option) (*parser, error) {
 				continue
 			}
 			// keep prev/next reference between tokens containing comments
-			// https://go-yaml/issues/254
+			// https://github.com/aixj1984/go-yaml/issues/254
 			filteredTokens = append(filteredTokens, tk)
 		}
 	}
