@@ -6,8 +6,8 @@ import (
 	"reflect"
 
 	"github.com/aixj1984/go-yaml/ast"
-	"github.com/aixj1984/go-yamlaml/printer"
-	"github.com/aixj1984/go-yamlaml/token"
+	"github.com/aixj1984/go-yaml/printer"
+	"github.com/aixj1984/go-yaml/token"
 )
 
 var (

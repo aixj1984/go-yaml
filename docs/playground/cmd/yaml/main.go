@@ -11,13 +11,13 @@ import (
 	"strings"
 	"syscall/js"
 
+	"github.com/aixj1984/go-yaml"
+	"github.com/aixj1984/go-yaml/ast"
+	"github.com/aixj1984/go-yaml/lexer"
+	"github.com/aixj1984/go-yaml/parser"
+	"github.com/aixj1984/go-yaml/token"
 	"github.com/goccy/go-graphviz"
 	"github.com/goccy/go-json"
-	"github.com/aixj1984/go-yaml"
-	"github.com/aixj1984/go-yamlaml/ast"
-	"github.com/aixj1984/go-yamlaml/lexer"
-	"github.com/aixj1984/go-yamlaml/parser"
-	"github.com/aixj1984/go-yamlaml/token"
 )
 
 func response(v any, err error) map[string]any {

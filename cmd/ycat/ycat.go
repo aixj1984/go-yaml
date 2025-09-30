@@ -9,8 +9,8 @@ import (
 	"github.com/mattn/go-colorable"
 
 	"github.com/aixj1984/go-yaml"
-	"github.com/aixj1984/go-yamlaml/lexer"
-	"github.com/aixj1984/go-yamlaml/printer"
+	"github.com/aixj1984/go-yaml/lexer"
+	"github.com/aixj1984/go-yaml/printer"
 )
 
 const escape = "\x1b"

@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/aixj1984/go-yaml/lexer"
-	"github.com/aixj1984/go-yamlaml/printer"
+	"github.com/aixj1984/go-yaml/printer"
 )
 
 func Test_Printer(t *testing.T) {
@@ -176,7 +176,8 @@ text3: hello
    6 |  gggg
    7 |  hhhh"`,
 		},
-		{token: 3,
+		{
+			token: 3,
 			want: `
    2 | text1: 'aaaa
    3 |  bbbb
@@ -187,7 +188,8 @@ text3: hello
        ^
    8 | text3: hello`,
 		},
-		{token: 5,
+		{
+			token: 5,
 			want: `
    2 | text1: 'aaaa
    3 |  bbbb
@@ -198,7 +200,8 @@ text3: hello
               ^
    8 | text3: hello`,
 		},
-		{token: 6,
+		{
+			token: 6,
 			want: `
    5 | text2: "ffff
    6 |  gggg
