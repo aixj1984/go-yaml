@@ -1,9 +1,9 @@
 # YAML support for the Go language
 
-[![PkgGoDev](https://pkg.go.dev/badge/github.com/aixj1984/go-yaml)](https://pkg.go.dev/github.com/aixj1984/go-yaml)
-![Go](https://github.com/aixj1984/go-yaml/workflows/Go/badge.svg)
+[![PkgGoDev](https://pkg.go.dev/badge/go-yaml)](https://pkg.go.dev/go-yaml)
+![Go](https://go-yaml/workflows/Go/badge.svg)
 [![codecov](https://codecov.io/gh/goccy/go-yaml/branch/master/graph/badge.svg)](https://codecov.io/gh/goccy/go-yaml)
-[![Go Report Card](https://goreportcard.com/badge/github.com/aixj1984/go-yaml)](https://goreportcard.com/report/github.com/aixj1984/go-yaml)
+[![Go Report Card](https://goreportcard.com/badge/go-yaml)](https://goreportcard.com/report/go-yaml)
 
 <img width="300px" src="https://user-images.githubusercontent.com/209884/67159116-64d94b80-f37b-11e9-9b28-f8379636a43c.png"></img>
 
@@ -33,33 +33,33 @@ By the way, libraries such as [ghodss/yaml](https://github.com/ghodss/yaml) and 
   - [Support recursive processing](https://github.com/apple/device-management/blob/release/docs/schema.yaml)
   - Higher coverage in the [YAML Test Suite](https://github.com/yaml/yaml-test-suite?tab=readme-ov-file)
     - YAML Test Suite consists of 402 cases in total, of which `gopkg.in/yaml.v3` passes `295`. In addition to passing all those test cases, `goccy/go-yaml` successfully passes nearly 60 additional test cases ( 2024/12/15 )
-    - The test code is [here](https://github.com/aixj1984/go-yaml/blob/master/yaml_test_suite_test.go#L77)
+    - The test code is [here](https://go-yaml/blob/master/yaml_test_suite_test.go#L77)
 - Ease and sustainability of maintenance
   - The main maintainer is [@goccy](https://github.com/goccy), but we are also building a system to develop as a team with trusted developers
   - Since it is written from scratch, the code is easy to read for Gophers
 - An API structure that allows the use of not only `Encoder`/`Decoder` but also `Tokenizer` and `Parser` functionalities.
-  - [lexer.Tokenize](https://pkg.go.dev/github.com/aixj1984/go-yaml@v1.15.4/lexer#Tokenize)
-  - [parser.Parse](https://pkg.go.dev/github.com/aixj1984/go-yaml@v1.15.4/parser#Parse)
+  - [lexer.Tokenize](https://pkg.go.dev/go-yaml@v1.15.4/lexer#Tokenize)
+  - [parser.Parse](https://pkg.go.dev/go-yaml@v1.15.4/parser#Parse)
 - Filtering, replacing, and merging YAML content using YAML Path
 - Reversible transformation without using the AST for YAML that includes Anchors, Aliases, and Comments
-- Customize the Marshal/Unmarshal behavior for primitive types and third-party library types ([RegisterCustomMarshaler](https://pkg.go.dev/github.com/aixj1984/go-yaml#RegisterCustomMarshaler), [RegisterCustomUnmarshaler](https://pkg.go.dev/github.com/aixj1984/go-yaml#RegisterCustomUnmarshaler))
+- Customize the Marshal/Unmarshal behavior for primitive types and third-party library types ([RegisterCustomMarshaler](https://pkg.go.dev/go-yaml#RegisterCustomMarshaler), [RegisterCustomUnmarshaler](https://pkg.go.dev/go-yaml#RegisterCustomUnmarshaler))
 - Respects `encoding/json` behavior
   - Accept the `json` tag. Note that not all options from the `json` tag will have significance when parsing YAML documents. If both tags exist, `yaml` tag will take precedence.
-  - [json.Marshaler](https://pkg.go.dev/encoding/json#Marshaler) style [marshaler](https://pkg.go.dev/github.com/aixj1984/go-yaml#BytesMarshaler)
-  - [json.Unmarshaler](https://pkg.go.dev/encoding/json#Unmarshaler) style [unmarshaler](https://pkg.go.dev/github.com/aixj1984/go-yaml#BytesUnmarshaler)
-  - Options for using `MarshalJSON` and `UnmarshalJSON` ([UseJSONMarshaler](https://pkg.go.dev/github.com/aixj1984/go-yaml#UseJSONMarshaler), [UseJSONUnmarshaler](https://pkg.go.dev/github.com/aixj1984/go-yaml#UseJSONUnmarshaler))
+  - [json.Marshaler](https://pkg.go.dev/encoding/json#Marshaler) style [marshaler](https://pkg.go.dev/go-yaml#BytesMarshaler)
+  - [json.Unmarshaler](https://pkg.go.dev/encoding/json#Unmarshaler) style [unmarshaler](https://pkg.go.dev/go-yaml#BytesUnmarshaler)
+  - Options for using `MarshalJSON` and `UnmarshalJSON` ([UseJSONMarshaler](https://pkg.go.dev/go-yaml#UseJSONMarshaler), [UseJSONUnmarshaler](https://pkg.go.dev/go-yaml#UseJSONUnmarshaler))
 - Pretty format for error notifications
 - Smart validation processing combined with [go-playground/validator](https://github.com/go-playground/validator)
-  - [example test code is here](https://github.com/aixj1984/go-yaml/blob/45889c98b0a0967240eb595a1bd6896e2f575106/testdata/validate_test.go#L12)
+  - [example test code is here](https://go-yaml/blob/45889c98b0a0967240eb595a1bd6896e2f575106/testdata/validate_test.go#L12)
 - Allow referencing elements declared in another file via anchors
 
 # Users
 
 The repositories that use goccy/go-yaml are listed here.
 
-- https://github.com/aixj1984/go-yaml/wiki/Users
+- https://go-yaml/wiki/Users
 
-The source data is [here](https://github.com/aixj1984/go-yaml/network/dependents).
+The source data is [here](https://go-yaml/network/dependents).
 It is already being used in many repositories. Now it's your turn 😄
 
 # Playground
@@ -71,7 +71,7 @@ https://goccy.github.io/go-yaml
 # Installation
 
 ```sh
-go get github.com/aixj1984/go-yaml
+go get go-yaml
 ```
 
 # Synopsis
@@ -355,7 +355,7 @@ package main
 import (
   "fmt"
 
-  "github.com/aixj1984/go-yaml"
+  "go-yaml"
 )
 
 func main() {
@@ -400,7 +400,7 @@ print yaml file with color
 ### Installation
 
 ```sh
-git clone https://github.com/aixj1984/go-yaml.git
+git clone https://go-yaml.git
 cd go-yaml/cmd/ycat && go install .
 ```
 

@@ -52,7 +52,7 @@ formatters:
       sections:
         - standard
         - default
-        - prefix(github.com/aixj1984/go-yaml)
+        - prefix(go-yaml)
         - blank
         - dot
     gofmt:

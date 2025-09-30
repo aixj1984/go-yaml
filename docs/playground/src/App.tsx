@@ -180,7 +180,7 @@ const ShareLink = (props: {
 const GitHubLink = () => {
   if (isXS()) {
     return (
-      <IconButton href="https://github.com/aixj1984/go-yaml">
+      <IconButton href="https://go-yaml">
         <GitHub sx={{ color: themeWhite }}></GitHub>
       </IconButton>
     );
@@ -197,7 +197,7 @@ const GitHubLink = () => {
         textTransform: "none",
       }}
       startIcon={<GitHub sx={{ color: themeBlack }}></GitHub>}
-      href="https://github.com/aixj1984/go-yaml"
+      href="https://go-yaml"
     >
       Visit Our GitHub
     </Button>

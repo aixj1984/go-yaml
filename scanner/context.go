@@ -6,7 +6,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/goccy/go-yaml/token"
+	"go-yaml/token"
 )
 
 // Context context at scanning
@@ -35,13 +35,11 @@ type MultiLineState struct {
 	isFolded                         bool
 }
 
-var (
-	ctxPool = sync.Pool{
-		New: func() interface{} {
-			return createContext()
-		},
-	}
-)
+var ctxPool = sync.Pool{
+	New: func() interface{} {
+		return createContext()
+	},
+}
 
 func createContext() *Context {
 	return &Context{

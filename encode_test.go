@@ -14,9 +14,9 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/aixj1984/go-yaml"
-	"github.com/aixj1984/go-yaml/ast"
-	"github.com/aixj1984/go-yaml/parser"
+	"go-yaml"
+	"go-yaml/ast"
+	"go-yaml/parser"
 )
 
 var (

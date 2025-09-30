@@ -3,7 +3,7 @@ package token_test
 import (
 	"testing"
 
-	"github.com/goccy/go-yaml/token"
+	"go-yaml/token"
 )
 
 func TestToken(t *testing.T) {

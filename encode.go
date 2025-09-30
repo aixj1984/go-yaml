@@ -12,11 +12,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/aixj1984/go-yaml/ast"
-	"github.com/aixj1984/go-yaml/internal/errors"
-	"github.com/aixj1984/go-yaml/parser"
-	"github.com/aixj1984/go-yaml/printer"
-	"github.com/aixj1984/go-yaml/token"
+	"go-yaml/ast"
+	"go-yaml/internal/errors"
+	"go-yaml/parser"
+	"go-yaml/printer"
+	"go-yaml/token"
 )
 
 const (
