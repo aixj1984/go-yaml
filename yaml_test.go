@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/goccy/go-yaml"
-	"github.com/goccy/go-yaml/parser"
+	"github.com/aixj1984/go-yaml"
+	"github.com/aixj1984/go-yaml/parser"
 )
 
 func TestRoundTripWithComment(t *testing.T) {
@@ -78,7 +78,7 @@ foo: bar # comment
 }
 
 func TestDecodeKeepAddress(t *testing.T) {
-	var data = `
+	data := `
 a: &a [_]
 b: &b [*a,*a]
 c: &c [*b,*b]
@@ -103,7 +103,7 @@ d: &d [*c,*c]
 }
 
 func TestSmartAnchor(t *testing.T) {
-	var data = `
+	data := `
 a: &a [_,_,_,_,_,_,_,_,_,_,_,_,_,_,_]
 b: &b [*a,*a,*a,*a,*a,*a,*a,*a,*a,*a]
 c: &c [*b,*b,*b,*b,*b,*b,*b,*b,*b,*b]

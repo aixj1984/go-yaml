@@ -3,8 +3,8 @@ package yaml
 import (
 	"fmt"
 
-	"github.com/goccy/go-yaml/ast"
-	"github.com/goccy/go-yaml/internal/errors"
+	"github.com/aixj1984/go-yaml/ast"
+	"github.com/aixj1984/go-yamlaml/internal/errors"
 )
 
 var (

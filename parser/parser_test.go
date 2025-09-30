@@ -8,11 +8,11 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/goccy/go-yaml"
-	"github.com/goccy/go-yaml/ast"
-	"github.com/goccy/go-yaml/lexer"
-	"github.com/goccy/go-yaml/parser"
-	"github.com/goccy/go-yaml/token"
+	"github.com/aixj1984/go-yaml"
+	"github.com/aixj1984/go-yamlaml/ast"
+	"github.com/aixj1984/go-yamlaml/lexer"
+	"github.com/aixj1984/go-yamlaml/parser"
+	"github.com/aixj1984/go-yamlaml/token"
 )
 
 func TestParser(t *testing.T) {

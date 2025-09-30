@@ -17,11 +17,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/goccy/go-yaml/ast"
-	"github.com/goccy/go-yaml/internal/errors"
-	"github.com/goccy/go-yaml/internal/format"
-	"github.com/goccy/go-yaml/parser"
-	"github.com/goccy/go-yaml/token"
+	"github.com/aixj1984/go-yaml/ast"
+	"github.com/aixj1984/go-yamlaml/internal/errors"
+	"github.com/aixj1984/go-yamlaml/internal/format"
+	"github.com/aixj1984/go-yamlaml/parser"
+	"github.com/aixj1984/go-yamlaml/token"
 )
 
 // Decoder reads and decodes YAML values from an input stream.
