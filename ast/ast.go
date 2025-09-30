@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/aixj1984/go-yaml/token"
+	"go-yaml/token"
 )
 
 var (
