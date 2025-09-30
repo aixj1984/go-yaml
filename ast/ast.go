@@ -2070,6 +2070,9 @@ func (n *CommentNode) AddColumn(col int) {
 
 // String comment to text
 func (n *CommentNode) String() string {
+	if n.Token == nil || len(n.Token.Value) == 0 {
+		return ""
+	}
 	return fmt.Sprintf("#%s", n.Token.Value)
 }
 
